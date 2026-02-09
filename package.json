@@ -1,0 +1,54 @@
+{
+  "name": "gitignored-cli",
+  "version": "0.1.0",
+  "description": "Zero-knowledge .env sharing for developer teams",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "gitignored": "./dist/index.js" },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altacomm/gitignored-cli.git"
+  },
+  "homepage": "https://gitignored.com",
+  "bugs": {
+    "url": "https://github.com/altacomm/gitignored-cli/issues"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "secrets",
+    "encryption",
+    "zero-knowledge",
+    "team",
+    "sharing",
+    "environment-variables",
+    "cli"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit",
+    "lint": "echo 'lint stub'"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.0",
+    "open": "^10.0.0",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
